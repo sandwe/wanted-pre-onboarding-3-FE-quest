@@ -6,10 +6,10 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <section>
+    <section className='flex min-h-[100vh]'>
       <h2 className='sr-only'>메뉴 및 콘텐츠</h2>
       <Sidebar />
-      {children}
+      <div className='grow-[1] px-4 py-6'>{children}</div>
     </section>
   );
 }
